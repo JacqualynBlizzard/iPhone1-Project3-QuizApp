@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stranger_Things_Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vo-pL-HXn">
+                                <rect key="frame" x="72.5" y="120" width="230" height="23.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="dxo-7d-VFN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shu-Dg-9G8">
+                                <rect key="frame" x="127" y="411.5" width="121" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2B-h5-KoF">
+                                <rect key="frame" x="87.5" y="183.5" width="200" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PkP-hd-fcx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Answer Choice 1">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSubmitAnswer0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLY-s2-bxb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tep-7p-xOf">
+                                <rect key="frame" x="87.5" y="235.5" width="200" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GSU-4g-7fN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Answer Choice 2">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSubmitAnswer1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sqF-9z-Nln"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrx-as-sx3">
+                                <rect key="frame" x="87.5" y="287.5" width="200" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qMK-Qy-qqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Answer Choice 3">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSubmitAnswer2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBc-fu-ucm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVj-Jc-zhB">
+                                <rect key="frame" x="87.5" y="339.5" width="200" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="xaV-tW-SAX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Answer Choice 4">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSubmitAnswer3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06l-Pk-aZh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Vo-pL-HXn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="B2P-y0-FGt"/>
+                            <constraint firstItem="Rrx-as-sx3" firstAttribute="top" secondItem="Tep-7p-xOf" secondAttribute="bottom" constant="20" id="HAk-uU-iGH"/>
+                            <constraint firstItem="Tep-7p-xOf" firstAttribute="top" secondItem="t2B-h5-KoF" secondAttribute="bottom" constant="20" id="Iqu-Oc-FKt"/>
+                            <constraint firstItem="cVj-Jc-zhB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGb-dp-gMr"/>
+                            <constraint firstItem="shu-Dg-9G8" firstAttribute="top" secondItem="cVj-Jc-zhB" secondAttribute="bottom" constant="40" id="VjB-Hw-AtX"/>
+                            <constraint firstItem="Rrx-as-sx3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fLd-GS-Z6e"/>
+                            <constraint firstItem="t2B-h5-KoF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJ1-mx-vGY"/>
+                            <constraint firstItem="5Vo-pL-HXn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ich-ZM-GQG"/>
+                            <constraint firstItem="shu-Dg-9G8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iwy-ui-q4J"/>
+                            <constraint firstItem="Tep-7p-xOf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nGs-wL-BSD"/>
+                            <constraint firstItem="t2B-h5-KoF" firstAttribute="top" secondItem="5Vo-pL-HXn" secondAttribute="bottom" constant="40" id="q3I-Tg-Zxv"/>
+                            <constraint firstItem="cVj-Jc-zhB" firstAttribute="top" secondItem="Rrx-as-sx3" secondAttribute="bottom" constant="20" id="xzL-GD-JQu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answer0" destination="t2B-h5-KoF" id="s0g-We-7ff"/>
+                        <outlet property="answer1" destination="Tep-7p-xOf" id="a6G-0s-gw5"/>
+                        <outlet property="answer2" destination="Rrx-as-sx3" id="EBC-y8-4iu"/>
+                        <outlet property="answer3" destination="cVj-Jc-zhB" id="DSz-9o-66k"/>
+                        <outlet property="progressLabel" destination="shu-Dg-9G8" id="CVV-On-tw0"/>
+                        <outlet property="questionLabel" destination="5Vo-pL-HXn" id="DbJ-0p-tQi"/>
+                        <segue destination="D3W-vm-Hca" kind="show" identifier="sgShowResults" id="yxr-wW-8DL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="134"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="dCM-BW-gK2">
+            <objects>
+                <viewController id="D3W-vm-Hca" customClass="ResultsViewController" customModule="Stranger_Things_Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IPR-sA-wCQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results Message Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-WS-hsM">
+                                <rect key="frame" x="72.5" y="120" width="230" height="23.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="ZXp-fT-9O5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oze-63-lZn">
+                                <rect key="frame" x="164.5" y="463.5" width="46" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stranger Things Results" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-Ff-bAf">
+                                <rect key="frame" x="62.5" y="173.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Jds-WF-GFD"/>
+                                    <constraint firstAttribute="width" constant="250" id="eFj-rh-34U"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exc-Tw-OaJ">
+                                <rect key="frame" x="137.5" y="543.5" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CmG-40-Tnr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9cU-Bx-Kc5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.25882352939999997" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Exc-Tw-OaJ" firstAttribute="top" secondItem="Oze-63-lZn" secondAttribute="bottom" constant="60" id="6tX-9Y-eRy"/>
+                            <constraint firstItem="gXU-Ff-bAf" firstAttribute="top" secondItem="oqn-WS-hsM" secondAttribute="bottom" constant="30" id="KAq-wH-iaK"/>
+                            <constraint firstItem="oqn-WS-hsM" firstAttribute="centerX" secondItem="IPR-sA-wCQ" secondAttribute="centerX" id="Kd7-Fd-53E"/>
+                            <constraint firstItem="gXU-Ff-bAf" firstAttribute="centerX" secondItem="IPR-sA-wCQ" secondAttribute="centerX" id="OkM-5c-yhu"/>
+                            <constraint firstItem="Oze-63-lZn" firstAttribute="centerX" secondItem="IPR-sA-wCQ" secondAttribute="centerX" id="Vv9-Nv-qNY"/>
+                            <constraint firstItem="oqn-WS-hsM" firstAttribute="top" secondItem="z1H-IC-xFt" secondAttribute="top" constant="100" id="Xwm-bR-Gn2"/>
+                            <constraint firstItem="Oze-63-lZn" firstAttribute="top" secondItem="gXU-Ff-bAf" secondAttribute="bottom" constant="40" id="rLG-mB-AAR"/>
+                            <constraint firstItem="Exc-Tw-OaJ" firstAttribute="centerX" secondItem="IPR-sA-wCQ" secondAttribute="centerX" id="uYx-kV-Ixr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z1H-IC-xFt"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultsMessageLabel" destination="oqn-WS-hsM" id="Pdq-dS-bgz"/>
+                        <outlet property="scoreLabel" destination="Oze-63-lZn" id="AJd-qS-cvo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So3-FH-eSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Stranger Things Results" width="825" height="724"/>
+    </resources>
+</document>
